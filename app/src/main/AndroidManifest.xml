@@ -15,7 +15,27 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <activity
+            android:name="com.takashi.ryoji"
+            android:label="title5"
+            android:launchMode="singleInstance"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:test="@string/twitter_callback_url_host"
+                    android:scheme="@string/twitter_callback_url_cheme"
+                    />
+            </intent-filter>
     </application>
 
 </manifest>
