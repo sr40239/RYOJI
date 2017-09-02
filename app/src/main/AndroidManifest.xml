@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.takashi.ryoji">
     <uses-permission android:name="android.permission.INTERNET" />
     <application
@@ -9,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.takashi.ryoji.MainActivity"
+            android:label="main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,24 +20,20 @@
 
         </activity>
 
-        <activity
-            android:name="com.takashi.ryoji"
-            android:label="title5"
-            android:launchMode="singleInstance"/>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.SAMPLE_CODE" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
+        <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.SAMPLE_CODE" />
+    </intent-filter>
+    <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data
-                    android:test="@string/twitter_callback_url_host"
-                    android:scheme="@string/twitter_callback_url_cheme"
-                    />
-            </intent-filter>
-    </application>
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data
+            android:test="@string/twitter_callback_url_host"
+            android:scheme="@string/twitter_callback_url_scheme"
+            />
+    </intent-filter>
+</application>
 
 </manifest>
