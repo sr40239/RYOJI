@@ -2,6 +2,6 @@
     <string name="app_name">RYOJI</string>
     <string name="twitter_consumer_key">exCBnqw59gAaqoc6sj6ndQCJY</string>
     <string name="twitter_consumer_secret">XLtLP7QnNA0VrLoAojpuG0zgbuUmWELaJNubvX6pYtrUa0iLxp</string>
-    <string name="twitter_coallback_url_scheme">com.takashi.ryoji</string>
-    <string name="twitter_calback_url_host">twitter.com</string>
+    <string name="twitter_callback_url_scheme">com.takashi.ryoji</string>
+    <string name="twitter_callback_url_host">twitter.com</string>
 </resources>

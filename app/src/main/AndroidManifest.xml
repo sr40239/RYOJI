@@ -19,21 +19,22 @@
             </intent-filter>
 
         </activity>
+        <activity android:name="com.takashi.ryoji.Tweet">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
 
-        <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.SAMPLE_CODE" />
-    </intent-filter>
-    <intent-filter>
-        <action android:name="android.intent.action.VIEW" />
-
-        <category android:name="android.intent.category.DEFAULT" />
-        <category android:name="android.intent.category.BROWSABLE"/>
-        <data
-            android:test="@string/twitter_callback_url_host"
-            android:scheme="@string/twitter_callback_url_scheme"
-            />
-    </intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="@string/twitter_callback_url_host"
+                    android:scheme="@string/twitter_callback_url_scheme"
+                    />
+            </intent-filter>
+        </activity>
 </application>
 
 </manifest>
