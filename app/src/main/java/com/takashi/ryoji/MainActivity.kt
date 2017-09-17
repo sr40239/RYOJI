@@ -9,9 +9,15 @@ class MainActivity : AppCompatActivity() {
     //
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-       // setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main)
 
-        // authorication
-      //  val btn : (Button) = findViewById(R.id.request);
+        val btn : (Button) = findViewById(R.id.button)
+
+        btn.setOnClickListener{ view ->
+
+            val msg : String = "今晩いかがですか"
+            // send message to ryoji-san
+        }
+
     }
 }
